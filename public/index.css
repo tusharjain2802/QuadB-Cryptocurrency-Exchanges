@@ -1,0 +1,89 @@
+body {
+  background-color: #191d28;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.logo{
+  height: 60px;
+  width: 350px;
+}
+
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header1{
+  display: flex;
+  margin-bottom: 5rem;
+}
+.button{
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 30px;
+  font-size: large;
+  color: #ffff;
+  border-radius: 10px;
+  padding: 0px 20px;
+}
+
+.triangle-container{
+  margin: auto;
+}
+.row1{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #808288;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 8px; 
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: 'roboto', sans-serif; 
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.row:first-child {
+  margin-bottom: 20px;
+}
+.col {
+  flex-basis: 33%;
+  text-align: center;
+}
+.col:first-child {
+  text-align: left;
+}
+.col:last-child {
+  text-align: right;
+}
+.btn {
+  background-color: #3DC6C1;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: auto;
+  border-radius: 8px;
+}

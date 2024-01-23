@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    
+    <title>HODLINFO</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header1">
+        <img class="logo" src="logo.png">
+        
+
+        <div class="triangle-container">
+          <button class="button button1">INR▼</button>
+          <button class="button button2">BTC▼</button>
+          <button class="button button3">Buy BTC</button>
+        </div>
+   
+            <div class="col">
+                <button class="btn">Connect to Telegram</button>
+            </div>
+        </header>
+        <div class="row1">
+            <div class="col">
+                <h2>#</h2>
+            </div>
+            <div class="col">
+                <h2>Platform</h2>
+            </div>
+            <div class="col">
+                <h2>Last Traded Price</h2>
+            </div>
+            <div class="col">
+                <h2>Buy / Sell Price</h2>
+            </div>
+            <div class="col">
+                <h2>Volume</h2>
+            </div>
+            <div class="col">
+                <h2>Base Unit</h2>
+            </div>
+        </div>
+        <% allItems.forEach(function(item, index){ %>
+        <div class="row">
+            <div class="col">
+                <p><%=index + 1%></p>
+            </div>
+            <div class="col">
+                <p><%=item.name%></p>
+            </div>
+            <div class="col">
+                <p>₹<%= item.last%></p>
+            </div>
+            <div class="col">
+                <p>₹<%= item.buy%> / ₹<%= item.sell%></p>
+            </div>
+            <div class="col">
+                <p><%= item.volume%></p>
+            </div>
+            <div class="col">
+                <p><%= item.base_unit%></p>
+            </div>
+        </div>
+        <% }) %>
+       </div>
+       </body>
+       </html>
